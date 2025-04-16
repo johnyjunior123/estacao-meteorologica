@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 10%;
+    background-color: #255AA7;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c3c3c3;
+}
+
+footer{
+    display: flex;
+    color: white;
+    background-color: #255AA7;
+    justify-content: center;
+    height: 5%;
+}
+
+nav {
+    display: flex;
+    gap: 2em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    align-self: flex-start;
+}
+.card{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: white;
+    border-radius: 50px;
+}
+.weather-data {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.data-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.data-card:hover {
+    transform: scale(1.05);
+}
+
+.data-card h2 {
+    font-size: 1.2rem;
+}
+
+.data-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.tabela {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
+}
+table {
+    border-collapse: collapse;
+}
+tbody{
+    display: block;
+    max-height: 150px; /* Limita a altura do corpo da tabela */
+    overflow-y: auto;  /* Permite rolagem vertical */
+    height: 100px; /* Define a altura da área rolável */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
